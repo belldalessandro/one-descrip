@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --cor-de-fundo: #ffffff;
+  --cor-primaria: #568ccd;
+  --cor-secundaria:#a0a3a6;
+  --cor-terciaria: #0A3871;
+
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+* {
+  margin:0;
+  padding: 0;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0 2.5rem;
+  align-items: center;
+}
+
+.cabecalho__imagem {
+  width: 115px;
+  height: 120px;
+  gap: 3px;
+}
+
+.cabecalho__titulo {
+  font-family: 'Inter', sans-serif;
+  color: var(--cor-primaria);
+  font-size: 50px;
+  font-weight: 600;
+  padding-right: 2rem;
+  gap: 50px;
+}
+
+main {
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 80px;
+  gap: 5rem;
+  align-items: center;
+}
+
+.container__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputTexto {
+  font-size: 40px;
+  color: var(--cor-primaria);
+  background: transparent;
+  box-shadow: none;
+  border: dotted;
+  border-color: var(--cor-secundaria);
+  border-width: 0.5rem;
+  outline: 0;
+  width: 450px;
+  height: 350px;
+}
+  
+.atencao {
+  display: flex;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon__atencao {
+  height: 20px;
+}
+
+.atencao h4 {
+  font-size: 20px;
+  color: var(--cor-secundaria);
+}
+
+
+.btn__criptografar {
+  background-color: var(--cor-terciaria);
+  color: white;
+  text-decoration: none;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn__criptografar:hover {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  transition: 0.5s all;
+}
+
+.btn__descriptografar {
+  background-color: var(--cor-terciaria);
+  color: white;
+  text-decoration: none;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn__descriptografar:hover {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  transition: 0.5s all;
+}
+
+.container__output {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imagem__codigo {
+  justify-content: center;
+  width: auto;
+  height: 395px;
+  background-image: var(--cor-de-fundo);
+  border: none;
+  border-radius: 1rem;
+  align-content: center;
+  margin: 0 0 0 0.5rem;
+}
+
+.output > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  color: var(--cor-primaria);
+  background: transparent;
+  box-shadow: none;
+  border: dotted;
+  border-color: var(--cor-secundaria);
+  border-width: 0.5rem;
+  outline: 0;
+  width: 450px;
+  height: 350px;
+}
+
+.outputTexto__h2 {
+  font-size: 25px;
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-align: center;
+}
+
+.outputTexto__h3 {
+  font-size: 19px;
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn__copiar {
+  background-color: var(--cor-terciaria);
+  color: white;
+  text-decoration: none;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin: 3rem auto 0 auto;
+  margin-bottom: 1rem;
+}
+
+.escondido {
+  display: none;
+}
+
+.btn__copiar:hover {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  transition: 0.5s all;
+}
+
+
+footer {
+  background-color: var(--cor-terciaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  margin-top: 3rem;
+  outline: none;
+}
+
+.rodape p {
+  color: var(--cor-primaria);
+  font-size: 27px;
+  text-decoration: none;
+  text-transform: none; 
+  padding: 1.7rem 0 1.7rem 0;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.icon {
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+  color: var(--cor-primaria)
+}
+
+.icon:hover {
+  color: var(--cor-secundaria);
+}
